@@ -1,6 +1,9 @@
-# TRABAJO PRÁCTICO 1.2
-
-# EJERCICIO 1
+# TRABAJO PRÁCTICO 1.2   -EUU para que se vea más prolijo el codigo dejen dos lineas entre ejercicio y ejercicio.
+#                        -Y para que se vea más prolijo en la consola agreguen un print("") después de cada ejercicio.
+#                        - Besis <3
+#                        - BASTA GASTON DE HACER PUNTOS, ya hiciste muchos jajaja
+# 
+# EJERCICIO 1 
 base = float(input("Ingrese la base del triángulo:"))
 altura = float(input("Ingrese la altura:"))
 area = (base * altura) / 2
@@ -11,6 +14,7 @@ perimetro=print("El perímetro del triangulo es: ",(lado1+lado2+lado3))
 print("El área del triangulo es: ",area)
 print(" ")
 
+
 # EJERCICIO 2
 print("Dé las longitudes de los catetos")
 cat1 = float(input("Cateto 1:"))
@@ -18,6 +22,7 @@ cat2 = float(input("Cateto 2:"))
 hipot = (cat1**2 + cat2**2)**(1/2)
 print("La hipotenusa de dicho triángulo mide", hipot)
 print(" ")
+
 
 # EJERCICIO 3
 num1= float(input("Ingrese un número: "))
@@ -27,14 +32,16 @@ rest= num1-num2
 multp= num1*num2
 div= num1/num2
 print("Segun los números ingresados:")
-print("suma:",sum, "\nresta:",rest, "\nmultiplicación:",multp,"\ndivision:",div)
+print("Suma:",sum, "\nResta:",rest, "\nMultiplicación:",multp,"\nDivision:",div)
 print(" ")
+
 
 # EJERCICIO 4
 grados_f=float(input("Ingrese grados Fahrenheit: "))
 grados_c=((grados_f-32)*5/9)
 print(grados_f," equivalen a ",grados_c," grados celcius.")
 print(" ")
+
 
 # EJERCICIO 5
 #¿Qué problemas tienen las siguientes instrucciones?¿Cómo las solucionarías?
@@ -45,17 +52,23 @@ A = (input("¿Cual es tu canción favorita? "))
 
 #b)	precio = input(“Precio: “)
 #   total = precio + (precio * 0.1)
-# Falta poner que tipo de variable esta pidiendo, en la entrada de datos de precio.
+# Falta poner que tipo de variable esta pidiendo, en la entrada de datos de precio; porque sino se toma como string y entonces no se puede hacer la cuenta de la linea siguiente.
 precio = float(input("Precio: "))
 total = precio + (precio*0.1)
 
 #c)	edad = int(input(“Edad: “))
 #   print(tu edad es, edad)
-#  el texto no está entre comillas, por lo que no cuenta
-
+#El texto "tu edad es" no está entre comillas, entonces no se va a mostrar el mensaje final por pantalla.
+edad = int(input("Edad: "))
+print("tu edad es", edad)
 
 #d)	edad = int(input(“Edad: “))
-# print(“Veamos si tu edad es 18…”, edad=18)
+#   print(“Veamos si tu edad es 18…”, edad=18)
+#En el print, la variable edad no esta siendo reasignada. Lo correcto sería colocar el signo(==), para que así se comparen los valores y obtengamos una respuesta logica.
+edad = int(input("Edad: "))
+print("Veamos si tu edad es 18…", edad==18)
+print(" ")
+
 
 # EJERCICIO 6
 print("Ingrese el primer numero: ")
@@ -68,12 +81,14 @@ promedio=(num1+num2+num3)/3
 print("El promedio de los numeros dados es:", promedio)
 print(" ")
 
+
 # EJERCICIO 7
 print("Ingrese la cantidad de minutos que desee: ")
 minutos=int(input())
 horas=int(minutos/60)
 print(minutos," equivalen a ",horas," horas y ",minutos-(horas*60)," minutos.")
 print(" ")
+
 
 # EJERCICIO 8
 sueldo_base = float(input("Ingrese su sueldo base: "))
@@ -85,10 +100,12 @@ sueldo_final = str(sueldo_base + comision*venta1 + comision*venta2 + comision*ve
 print(f'Su sueldo final será de {sueldo_final}')
 print(" ")
 
+
 # EJERCICIO 9
 precio_total = float(input("Ingrese el precio neto: "))
 print("El precio con descuento del 15 por ciento es de: $", precio_total*0.85)
 print(" ")
+
 
 # EJERCICIO 10
 parcial1 = float(input("Ingrese la nota del parcial 1: "))
@@ -103,6 +120,7 @@ nota_final = prom_parciales + final + trabajo_final
 print("La nota final de la materia es de:", nota_final)
 print(" ")
 
+
 # EJERCICIO 11
 x1 = float(input("Ingrese un número: "))
 x2 = float(input("Ingrese otro número: "))
@@ -110,16 +128,28 @@ distancia = abs(x1 - x2)
 print("La distancia entre dichos números es de:", distancia)
 print(" ")
 
+
 # EJERCICIO 12
 numero = float(input("Ingrese un número: "))
 print("La raiz cuadrada del n° es:", numero**(1/2), " y la raiz cúbica es:", numero**(1/3))
 print(" ")
 
+
 # EJERCICIO 13
+num = int(input("Ingrese un número entero de dos cifras: "))
+lista = str(num)
+print(lista[::-1])
+print(" ")
 
 
 # EJERCICIO 14
-
+A = int(input("Ingrese un número A : "))
+B = int(input("Ingrese otro número B : "))
+C = A
+A = B
+B = C
+print("El valor invertido de las variables ingresadas son:\nA:",A, "\nB:",B )
+print(" ")
 
 # EJERCICIO 15
 
@@ -130,6 +160,7 @@ print(" ")
 # EJERCICIO 17
 usuario = input("Ingrese su nombre: ")
 print(f"Ahora estas en la matrix, {usuario}")
+print(" ")
 
 # EJERCICIO 18
 comanda = float(input("Ingrese el valor de la comida: "))
