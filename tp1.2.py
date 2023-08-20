@@ -136,7 +136,19 @@ print("El valor invertido de las variables ingresadas son:\nA:",A, "\nB:",B )
 print(" ")
 
 # EJERCICIO 15
-
+HH = int(input("Ingrese la hora de salida: "))
+MM = int(input("Minutos: "))
+SS = int(input("Segundos: "))
+hh = int(input("Ingrese la duración del viaje en horas: "))
+mm = int(input("Minutos: "))
+ss = int(input("Segundos: "))
+dif_s = int((ss+SS)/60)
+dif_m = int((mm+MM)/60)
+dif_h = int((hh+HH)/60)
+seg_f = ss + SS - dif_s * 60
+min_f = mm + MM + dif_s - dif_m * 60
+h_f = hh + HH + dif_m - dif_h * 60
+print(f"Usted salió a las {HH}:{MM}:{SS}hs y llegará a las {h_f}:{min_f}:{seg_f}hs")
 print(" ")
 
 # EJERCICIO 16
