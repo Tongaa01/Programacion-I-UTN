@@ -20,7 +20,7 @@ elif dia=="martes": #En el dia lunes, martes y miércoles solo calculamos el por
     alumnos_desaprobados = int(input("Ingrese la cantidad de alumnos desaprobados: "))
     alumnos_aprobados_porcentaje = (alumnos_aprobados * 100) / (alumnos_aprobados + alumnos_desaprobados)
     print(f"El porcentaje de alumnos aprobados es del {round(alumnos_aprobados_porcentaje,2)}%")
-elif dia=="miercoles" or "miércoles": #En el dia lunes, martes y miércoles solo calculamos el porcentaje de aprobados.
+elif dia=="miercoles" or dia=="miércoles": #En el dia lunes, martes y miércoles solo calculamos el porcentaje de aprobados.
     print("Hoy toca: Nivel avanzado.")
     alumnos_aprobados = int(input("Ingrese la cantidad de alumnos aprobados: "))
     alumnos_desaprobados = int(input("Ingrese la cantidad de alumnos desaprobados: "))
