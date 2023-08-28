@@ -1,3 +1,5 @@
+import math
+
 # Ejercicio 1
 print("Ingrese la cantidad de años que tiene su computadora")
 edad = float(input())
@@ -183,7 +185,23 @@ elif año_act < año_x:
 
 
 # Ejercicio 15
+print("~ ÁREAS ~")
+print("¿Que área desea calcular? Seleccione una opción:")
+letra=str(input("T = área del triángulo  //  C = área del círculo")).upper()
 
+if letra == "T":
+    bas=float(input("Ingrese la base del triangulo: "))
+    alt=float(input("Ingrese la altura del triangulo: "))
+    areaT= (bas*alt)/2
+    print("El área de su triángulo es: ", areaT)
+elif letra == "C":
+    rad=float(input("Ingrese el radio del circulo: "))
+    x=math.pi/2
+    areaC= x*(rad^2)
+    print("El área de su círculo es: ", areaC)
+else:
+    print("La letra ingresada no es correcta")
+print("")
 
 # Ejercicio 16
 print("Ingrese dos números, 'a' y 'b' y la operación a realizar entre ellos, por ejemplo: 28 + 5")
@@ -232,7 +250,20 @@ else:
 print("")
 
 # Ejercicio 18
-
+print("~ SALARIO ~")
+CantHMes=float(input("¿Cuántas horas trabajo este mes?:"))
+SalarioH=float(input("¿Cuánto recibe por hora trabajada?:"))
+hMin=192
+Salario= CantHMes*SalarioH
+if CantHMes > 192:
+    hExtra= CantHMes - 192
+    print("Usted trabajo:",hExtra, "horas extra")
+    SalarioT= (Salario + (hExtra*0.1))
+    print(f"Su salario total (con la bonificación por las horas extras) es: ${SalarioT}")
+else:
+    print("Usted no ha trabajado horas extras este mes.")
+    print(f"Su salario total (sin bonificación) es: ${Salario}")
+print("")
 
 # Ejercicio 19
 lapiz = int(input("Ingrese la cantidad de lápices a comprar: "))
