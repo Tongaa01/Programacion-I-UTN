@@ -37,4 +37,5 @@ for letra in msj5:
     ind=(ind+paso)%27
     print(end=alf[ind])
 print("")
-    
+
+# EJERCICIO 2
