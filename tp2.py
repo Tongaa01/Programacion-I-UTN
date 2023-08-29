@@ -171,24 +171,44 @@ año_act=int(input("Ingrese el año actual: "))
 año_x=int(input("Ingrese cualquier otro año: "))
 print("")
 if año_act > año_x:
- años_pasados= (año_act - año_x)
- print("Pasaron ", años_pasados, "años desde", año_x)
+  años_pasados= (año_act - año_x)
+  print("Pasaron ", años_pasados, "años desde", año_x)
 elif año_act < año_x:
- años_faltantes= (año_x - año_act)
- print("Faltan ", años_faltantes, "años para", año_act)
- print("")
+  años_faltantes= (año_x - año_act)
+  print("Faltan ", años_faltantes, "años para", año_act)
+print("")
 
 # Ejercicio 13
-
+a=int(input("Ingrese un número: "))
+b=int(input("Ingrese un segundo número: "))
+if a>0 and b>0: 
+    if a<b and b%a==0:
+        print(f"{b} es múltiplo de {a}.")
+    elif b<a and a%b==0:
+        print(f"{a} es múltiplo de {b}.")
+    else:
+        print("Ninguno es múltiplo del otro.")
+else:
+    print("Los números ingresados son nulos o negativos.")
+print("")
 
 # Ejercicio 14
-
+print("Ingrese los coeficientes de la recta, en orden (a*x + b = 0)")
+a=int(input("Ingrese a: "))
+b=int(input("Ingrese b: "))
+if a==0 and b==0:
+    print("La solución son todos los reales.")
+elif a==0:
+    print("La ecuación no tiene solución.")
+else:
+    x=(-b/a)
+    print("La solucion es", x)
+print("")
 
 # Ejercicio 15
 print("~ ÁREAS ~")
 print("¿Que área desea calcular? Seleccione una opción:")
 letra=str(input("T = área del triángulo  //  C = área del círculo")).upper()
-
 if letra == "T":
     bas=float(input("Ingrese la base del triangulo: "))
     alt=float(input("Ingrese la altura del triangulo: "))
