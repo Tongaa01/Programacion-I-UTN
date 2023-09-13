@@ -1,9 +1,16 @@
 import math
 #1 english----------------------------------------------------------()
-
-
-
-
+x = 0
+while x <= 30:
+  x = x + 1
+  if x==4 or x==6 or x==10:
+    print(f"Se saltó el el valor {x} de x.")
+  elif x==15:
+    print(f"Se rompió la ejecución del bucle cuando x valía {x}.")
+    break
+  else:
+    print(x)
+print("")
 #1------------------------------------------------------------------(E)
 list = []
 exit = True
@@ -46,6 +53,7 @@ while True:
     else:
         print("Error. Ingrese una operación con el formato dado")
 print(f"Ha salido con éxito. Su balance es de ${bank_account}")
+print("")
 #3------------------------------------------------------------------()
 #Escribir un programa que solicite el ingreso de una cantidad indeterminada de números mayores que 1, 
 #finalizando cuando se reciba un cero.
@@ -71,8 +79,7 @@ while True:
             else:
                primo = primo + 1
 print("La cantidad de números PRIMOS ingresados es: ",primo)
-              
-   
+print("")
 #4------------------------------------------------------------------()
 
 
