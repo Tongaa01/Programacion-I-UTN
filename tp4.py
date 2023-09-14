@@ -11,7 +11,7 @@ while x <= 30:
   else:
     print(x)
 print("")
-#1------------------------------------------------------------------(E)
+#1------------------------------------------------------------------()
 list = []
 exit = True
 line_number = int(input("Cuantas lineas desea ingresar  "))
@@ -24,7 +24,7 @@ while exit == True:
     print(list[p].upper())
   break  
 print("")
-#2------------------------------------------------------------------(Tonga)
+#2------------------------------------------------------------------()
 bank_account = 0
 bank_movements = 0
 print("Bienvenido a Dinamite Bank. Las operaciones disponibles son:")
@@ -55,15 +55,9 @@ while True:
 print(f"Ha salido con éxito. Su balance es de ${bank_account}")
 print("")
 #3------------------------------------------------------------------()
-#Escribir un programa que solicite el ingreso de una cantidad indeterminada de números mayores que 1, 
-#finalizando cuando se reciba un cero.
-#Imprimir la cantidad total de números primos ingresados.
-#Nota: Un número primo es un número natural mayor que 1 que tiene únicamente dos divisores distintos:
-#él mismo y el 1.
-#let me in, letme innnnnnn
-n=0
-primo=0
-NoPrimo=0
+n = 0
+prime = 0
+no_prime = 0
 while True:
     num = int(input("Ingrese números:")) 
     if num<0:
@@ -71,20 +65,51 @@ while True:
         continue
     elif num == 0 :
         break
-        #si es divisible NO es PRIMO
     else:
         for i in range(2, num, 1):
             if num%i == 0:
-                NoPrimo = num
+                no_prime = num
             else:
-               primo = primo + 1
-print("La cantidad de números PRIMOS ingresados es: ",primo)
+               prime = prime + 1
+print("La cantidad de números PRIMOS ingresados es:",primo)
 print("")
 #4------------------------------------------------------------------()
-
-
-
-
+checker = 0
+while True:
+  while True:
+    try:
+      first_year = int(input("Ingrese un año: "))
+    except ValueError:
+      print("El número ingresado no es correcto. Intente nuevamente.")
+      continue
+    else:
+      break
+  while True:
+    try:
+      last_year = int(input("Ingrese otro año: "))
+    except ValueError:
+      print("El número ingresado no es correcto. Intente nuevamente.")
+      continue
+    else:
+      break
+  if first_year == last_year:
+    print("No pueden ser iguales los años. Intente nuevamente.")
+    continue
+  else:
+    break
+if last_year < first_year:
+  switch = first_year
+  first_year = last_year
+  last_year = switch
+print(f"Los años biciestos y múltiplos de 10 entre {first_year} y {last_year} son:")
+print("")
+for i in range(first_year, last_year+1, 1):
+  if ((i%4==0 and i%100!=0) or i%400==0) and i%10==0:
+    checker = 1
+    print(i, end=" ")
+if checker == 0:
+  print("No hay años biciestos y múltiplos de 10 en el rango elegido.")
+   
 #5------------------------------------------------------------------()
 print("Los numeros pares entre el 1 y el 20 son:")
 for i in range(1, 21, 1):
@@ -100,7 +125,7 @@ while exit == 1:
   num_look = int(input("¿Que numero entre el 1 y 20 desea buscar? "))
   if num_look < 1 or num_look > 20:
     print("Ese numero no esta comprendido entre 1 y 20")
-    print("Intente denuevo")
+    print("Intente de nuevo")
     exit = 1
   else:
     exit = 0
