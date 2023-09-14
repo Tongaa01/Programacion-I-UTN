@@ -71,7 +71,7 @@ while True:
                 no_prime = num
             else:
                prime = prime + 1
-print("La cantidad de números PRIMOS ingresados es:",primo)
+print("La cantidad de números PRIMOS ingresados es:",prime)
 print("")
 #4------------------------------------------------------------------()
 checker = 0
