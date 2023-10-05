@@ -1,4 +1,5 @@
-import funciones, math
+import funciones, math, sys
+sys.set_int_max_str_digits(0)
 print("Ingrese números primos, o uno no primo para salir:")
 prime_list = []
 prime_number = True

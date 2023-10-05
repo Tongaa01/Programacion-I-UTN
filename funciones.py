@@ -28,6 +28,7 @@ def last_word_len (phrase):
             phrase.remove(phrase[0])
         else:
             break
+    phrase.append(" ")
     phrase = "".join(phrase)
     word_len = len(phrase[0:phrase.find(" ")])
     return word_len
